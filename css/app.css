@@ -46,9 +46,11 @@ li {
 }
 h4{
     font-size: 12px;
+    color: var(--clr-snd-txt);
 }
 p{
     font-size: 11px;
+    
 }
 a{
     font-size: 1rem;
@@ -75,7 +77,6 @@ i{
   background: var(--clr-lgt-primary);
   margin: 20px auto;
   border-radius: 16px;
-  /* padding: 30px 30px; */
 }
 .invoice__header {
   background: var(--clr-secondary);
@@ -125,14 +126,15 @@ i{
   align-self: center;
   border-bottom: 1px solid var(--clr-accent);
   width: 80%;
+  padding-bottom: 10px;
 }
 
 #task-container {
   align-self: flex-start;
 }
 
-#task-container p,
-#price-container p {
+#task-container h4,
+#price-container h4 {
   padding: 10px 15px;
   font-size: 12px;
   font-weight: 600;
@@ -207,3 +209,13 @@ i{
 .icons{
     padding-top: 8px;
 }
+
+footer {
+    justify-items: center;
+    text-align: center;
+    color: var(--clr-snd-txt);
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+  
+    margin-top: 0;
+  }

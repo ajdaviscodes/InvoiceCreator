@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/app.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="index.js"></script>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="index.js" defer></script>
+
     <title>Invoice Creator</title>
   </head>
   <body>
@@ -21,31 +23,31 @@
       </div>
       <div class="invoice__body">
         <div class="invoice__body_buttons">
-          <button class="invoice__body_button btn" id="wash_car">
-            Wash Car: $10
+          <button class="invoice__body_button btn" id="button-1">
+            Wash Car
           </button>
-          <button class="invoice__body_button btn" id="mow-lawn">
-            Mow Lawn: $20
+          <button class="invoice__body_button btn" id="button-2">
+            Mow Lawn
           </button>
-          <button class="invoice__body_button btn" id="pull-weeds">
-            Pull Weeds: $30
+          <button class="invoice__body_button btn" id="button-3">
+            Pull Weeds
           </button>
         </div>
         <div class="invoice__body_cart">
           <div class="invoice__body_cart-task" id="task-container">
-            <p>TASK</p>
-            <ul>
-              <li>Wash Car <a href="">x</a></li>
-              <li>Mow Lawn <a href="">x</a></li>
-              <li>Pull Weeds <a href="">x</a></li>
+            <h4>TASK</h4>
+            <ul id="task-ul">
+              <!-- <li>Wash Car <a href="" class="delete">x</a></li>
+              <li>Mow Lawn <a href="" class="delete">x</a></li>
+              <li>Pull Weeds <a href="" class="delete">x</a></li> -->
             </ul>
           </div>
           <div class="invoice__body_cart-price" id="price-container">
-            <p>PRICE</p>
-            <ul>
-              <li><span>$</span>10</li>
+            <h4>PRICE</h4>
+            <ul id="price-ul">
+              <!-- <li><span>$</span>10</li>
               <li><span>$</span>20</li>
-              <li><span>$</span>30</li>
+              <li><span>$</span>30</li> -->
             </ul>
           </div>
           
@@ -60,22 +62,24 @@
                 <i class="fa fa-amazon"></i>
                 <i class="fa fa-credit-card-alt"></i>
                 <i class="fa fa-bitcoin"></i>
-                
-             
-              </div>
-              <!-- maybe add icons ^^ -->
             </div>
-            <div class="invoice__body_cart-total total_area">
-              <h4>TOTAL AMOUNT</h4>
-              <h3><span>$</span>60</h3>
-            </div>
+            <!-- maybe add icons ^^ -->
           </div>
-          <button class="invoice__body_cart-total-btn "><i class="fa fa-envelope"></i>Send Invoice</button>
+          <div class="invoice__body_cart-total total_area">
+            <h4>TOTAL AMOUNT</h4>
+            <h3  id="total-el">
+                <!-- <span>$</span> -->
+            </h3>
           </div>
+        </div>
+        <button class="invoice__body_cart-total-btn" id="invoice-btn">
+          <i class="fa fa-envelope"></i>Send Invoice
+        </button>
+      </div>
       <div id="snackbar"></div>
     </div>
     <footer>
-      <a href="#"></a>
+      
       <p>© 2022 AJ Davis</p>
     </footer>
   </body>
