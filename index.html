@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+<body>
+    
+    <title>Invoice Creator</title>
+  </head>
+  <body>
+    <div class="invoice">
+      <div class="invoice__header">
+        <h1 class="invoice__header_title">Invoice Creator</h1>
+        <h5 class="invoice__header_subtitle">
+          Thanks for choosing MyCorp, LLC!
+        </h5>
+      </div>
+      <div class="invoice__body">
+        <div class="invoice__body_buttons">
+          <button class="invoice__body_button btn" id="wash_car">
+            Wash Car: $10
+          </button>
+          <button class="invoice__body_button btn" id="mow-lawn">
+            Mow Lawn: $20
+          </button>
+          <button class="invoice__body_button btn" id="pull-weeds">
+            Pull Weeds: $30
+          </button>
+        </div>
+        <div class="invoice__body_cart">
+          <div class="invoice__body_cart-task" id="task-container">
+            <p>TASK</p>
+            <ul>
+              <li>Wash Car <a href="">x</a></li>
+              <li>Mow Lawn <a href="">x</a></li>
+              <li>Pull Weeds <a href="">x</a></li>
+            </ul>
+          </div>
+          <div class="invoice__body_cart-price" id="price-container">
+            <p>PRICE</p>
+            <ul>
+              <li><span>$</span>10</li>
+              <li><span>$</span>20</li>
+              <li><span>$</span>30</li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="invoice__body_cart-total" id="total-container">
+            <div class="invoice__body_cart-total notes_area">
+              <h4>NOTES</h4>
+              <p>We accept these forms of payment</p>
+              <div class="icons">
+                <i class="fa fa-dollar"></i>
+                <i class="fa fa-paypal"></i>
+                <i class="fa fa-amazon"></i>
+                <i class="fa fa-credit-card-alt"></i>
+                <i class="fa fa-bitcoin"></i>
+                
+             
+              </div>
+              <!-- maybe add icons ^^ -->
+            </div>
+            <div class="invoice__body_cart-total total_area">
+              <h4>TOTAL AMOUNT</h4>
+              <h3><span>$</span>60</h3>
+            </div>
+          </div>
+          <button class="invoice__body_cart-total-btn "><i class="fa fa-envelope"></i>Send Invoice</button>
+          </div>
+      <div id="snackbar"></div>
+    </div>
+    <footer>
+      <a href="#"></a>
+      <p>© 2022 AJ Davis</p>
+    </footer>
+  </body>
+</html>
