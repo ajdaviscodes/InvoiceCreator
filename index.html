@@ -5,82 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/app.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="index.js" defer></script>
+      <script src="index.js" defer></script>
 
     <title>Invoice Creator</title>
   </head>
   <body>
     <div class="invoice">
-      <div class="invoice__header">
-        <h1 class="invoice__header_title">Invoice Creator</h1>
-        <h5 class="invoice__header_subtitle">
-          Thanks for choosing MyCorp, LLC!
-        </h5>
-      </div>
       <div class="invoice__body">
-        <div class="invoice__body_buttons">
-          <button class="invoice__body_button btn" id="button-1">
-            Wash Car
-          </button>
-          <button class="invoice__body_button btn" id="button-2">
-            Mow Lawn
-          </button>
-          <button class="invoice__body_button btn" id="button-3">
-            Pull Weeds
-          </button>
+        <div class="invoice__body_header">
+          <h1 id="header-title">Invoice Creator</h1>
+          <h3 id="header-subtitle">Thank you for choosing MyCorp, llc.</h3>
+        </div>
+        <div class="invoice__body_tasks">
+          <button class="invoice__body_tasks-button tasks-btn" id="button-el1"><b>-Task 1-</b>   $10</button>
+          <button class="invoice__body_tasks-button tasks-btn" id="button-el2"><b>-Task 2-</b>   $20</button>
+          <button class="invoice__body_tasks-button tasks-btn" id="button-el3"><b>-Task 3-</b>   $30</button>
         </div>
         <div class="invoice__body_cart">
-          <div class="invoice__body_cart-task" id="task-container">
-            <h4>TASK</h4>
-            <ul id="task-ul">
-              <!-- <li>Wash Car <a href="" class="delete">x</a></li>
-              <li>Mow Lawn <a href="" class="delete">x</a></li>
-              <li>Pull Weeds <a href="" class="delete">x</a></li> -->
-            </ul>
-          </div>
-          <div class="invoice__body_cart-price" id="price-container">
+          <div class="invoice__body_cart-title" id="cart-title">
+            <h4>SERVICE</h4>
             <h4>PRICE</h4>
-            <ul id="price-ul">
-              <!-- <li><span>$</span>10</li>
-              <li><span>$</span>20</li>
-              <li><span>$</span>30</li> -->
+          </div>
+          <div class="invoice__body_cart-list">
+            <ul id="cart-list-el">
+              <!-- <li class="list-item">
+                <p>
+                  <span class="service-name">Mow Lawn</span>
+                  <span class="service-price">$20</span>
+                </p>
+              </li> -->
             </ul>
           </div>
-          
         </div>
-        <div class="invoice__body_cart-total" id="total-container">
-            <div class="invoice__body_cart-total notes_area">
+        <div class="invoice__body_subtotal">
+          <div class="invoice__body_subtotal-title" id="subtotal-title">
               <h4>NOTES</h4>
-              <p>We accept these forms of payment</p>
-              <div class="icons">
-                <i class="fa fa-dollar"></i>
-                <i class="fa fa-paypal"></i>
-                <i class="fa fa-amazon"></i>
-                <i class="fa fa-credit-card-alt"></i>
-                <i class="fa fa-bitcoin"></i>
-            </div>
-            <!-- maybe add icons ^^ -->
+              <h4>TOTAL</h4>
+              
           </div>
-          <div class="invoice__body_cart-total total_area">
-            <h4>TOTAL AMOUNT</h4>
-            <h3  id="total-el">
-                <!-- <span>$</span> -->
-            </h3>
-          </div>
+            <ul class="ul">
+              <li  id="notes-el">We accept cash, card, and ApplePay! </li>
+              <li  id="total-el"><span>$</span></li>
+            </ul>
+          <button class="invoice__body_subtotal-button" id="invoice-button">Send Invoice</button>
         </div>
-        <button class="invoice__body_cart-total-btn" id="invoice-btn">
-          <i class="fa fa-envelope"></i>Send Invoice
-        </button>
       </div>
-      <div id="snackbar"></div>
     </div>
-    <footer>
-      
-      <p>© 2022 AJ Davis</p>
-    </footer>
   </body>
 </html>
